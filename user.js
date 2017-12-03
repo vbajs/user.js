@@ -57,11 +57,11 @@ user_pref("geo.wifi.logging.enabled", false);
 // https://developer.mozilla.org/docs/Mozilla/B2G_OS/API/TCPSocket
 user_pref("dom.mozTCPSocket.enabled",				false);
 
-// PREF: Disable DOM storage (disabled)
+// PREF: Disable DOM storage
 // http://kb.mozillazine.org/Dom.storage.enabled
 // https://html.spec.whatwg.org/multipage/webstorage.html
 // NOTICE-DISABLED: Disabling DOM storage is known to cause`TypeError: localStorage is null` errors
-//user_pref("dom.storage.enabled",		false);
+user_pref("dom.storage.enabled",		false);
 
 // PREF: Disable leaking network/browser connection information via Javascript
 // Network Information API provides general information about the system's connection type (WiFi, cellular, etc.)
@@ -146,7 +146,7 @@ user_pref("browser.send_pings.require_same_host",		true);
 // http://forums.mozillazine.org/viewtopic.php?p=13842047
 // https://github.com/pyllyukko/user.js/issues/8
 // NOTICE-DISABLED: IndexedDB could be used for tracking purposes, but is required for some add-ons to work (notably uBlock), so is left enabled
-//user_pref("dom.indexedDB.enabled",		false);
+user_pref("dom.indexedDB.enabled",		false);
 
 // TODO: "Access Your Location" "Maintain Offline Storage" "Show Notifications"
 
@@ -1005,11 +1005,11 @@ user_pref("security.pki.sha1_enforcement_level",		1);
 // https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3555
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken",	true);
 
-// PREF: Disallow connection to servers not supporting safe renegotiation (disabled)
+// PREF: Disallow connection to servers not supporting safe renegotiation
 // https://wiki.mozilla.org/Security:Renegotiation#security.ssl.require_safe_negotiation
 // https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2009-3555
 // TODO: `security.ssl.require_safe_negotiation` is more secure but makes browsing next to impossible (2012-2014-... - `ssl_error_unsafe_negotiation` errors), so is left disabled
-//user_pref("security.ssl.require_safe_negotiation",		true);
+user_pref("security.ssl.require_safe_negotiation",		true);
 
 // PREF: Disable automatic reporting of TLS connection errors
 // https://support.mozilla.org/en-US/kb/certificate-pinning-reports
