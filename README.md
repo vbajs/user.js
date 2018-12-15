@@ -19,6 +19,9 @@ A [user.js](http://kb.mozillazine.org/User.js_file) configuration file for [Mozi
 * Hopefully limit the attack surface by disabling various features.
 * Still be usable in daily use.
 
+### Note
+This is my fork in which I have enabled nofitifications and enabled DNS over HTTPS. This fork is in no way meant to be used by the average person and I highly recommend you to use the orignal verison which is @pyllyukko's. I have no plans whatsoever to create a pull request adding in atleast one of my changes as it meant to be for my personal use. Although, the reason why this fork exists because git makes things so easy to maintain instead of having to manually add in any new changes whenever there is an update. I can simply instead just pull and merge the changes that have been done and fix conflicts(if any). So, hopefully anyone who passes by this fork can understand that.
+
 ### How to achieve this?
 
 There are several parts to all this and they are:
