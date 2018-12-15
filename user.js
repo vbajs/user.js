@@ -139,7 +139,7 @@ user_pref("browser.send_pings.require_same_host",		true);
 // NOTICE-DISABLED: IndexedDB could be used for tracking purposes, but is required for some add-ons to work (notably uBlock), so is left enabled
 //user_pref("dom.indexedDB.enabled",		false);
 
-// TODO: "Access Your Location" "Maintain Offline Storage" "Show Notifications"
+// TODO: "Access Your Location" "Maintain Offline Storage"
 
 // PREF: Disable gamepad API to prevent USB device enumeration
 // https://www.w3.org/TR/gamepad/
@@ -1147,6 +1147,9 @@ user_pref("security.ssl3.rsa_aes_256_sha",			true); // 0x35
 user_pref("security.ssl3.rsa_aes_128_sha",			true); // 0x2f
 
 // PREF: DNS over HTTPS
+// https://www.reddit.com/r/firefox/comments/a5evhr/configure_dns_over_https_in_firefox/
+// https://www.reddit.com/r/firefox/comments/a5evhr/configure_dns_over_https_in_firefox/ebn5r1v/?context=8&depth=9
+// https://www.reddit.com/r/firefox/comments/a5evhr/configure_dns_over_https_in_firefox/ebndrx5/?context=8&depth=9
 user_pref("network.trr.mode",					3);
 user_pref("network.trr.url",					"https://mozilla.cloudflare-dns.com/dns-query");
 user_pref("network.security.ensi.enabled",			true);
