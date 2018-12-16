@@ -719,12 +719,12 @@ user_pref("privacy.firstparty.isolate",				true);
 // https://developer.mozilla.org/en-US/docs/Cookies_Preferences_in_Mozilla#network.cookie.thirdparty.sessionOnly
 user_pref("network.cookie.thirdparty.sessionOnly",		true);
 
-// PREF: Spoof User-agent (disabled)
-//user_pref("general.useragent.override",				"Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0");
-//user_pref("general.appname.override",				"Netscape");
-//user_pref("general.appversion.override",			"5.0 (Windows)");
-//user_pref("general.platform.override",				"Win32");
-//user_pref("general.oscpu.override",				"Windows NT 6.1");
+// PREF: Spoof User-agent
+user_pref("general.useragent.override",				"Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0");
+user_pref("general.appname.override",				"Netscape");
+user_pref("general.appversion.override",			"5.0 (Windows)");
+user_pref("general.platform.override",				"Win32");
+user_pref("general.oscpu.override",				"Windows NT 6.1");
 
 // PREF: DNS over HTTPS
 // https://www.reddit.com/r/firefox/comments/a5evhr/configure_dns_over_https_in_firefox/
