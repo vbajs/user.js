@@ -726,6 +726,13 @@ user_pref("network.cookie.thirdparty.sessionOnly",		true);
 //user_pref("general.platform.override",				"Win32");
 //user_pref("general.oscpu.override",				"Windows NT 6.1");
 
+// PREF: DNS over HTTPS
+// https://www.reddit.com/r/firefox/comments/a5evhr/configure_dns_over_https_in_firefox/
+// https://www.reddit.com/r/firefox/comments/a5evhr/configure_dns_over_https_in_firefox/ebndrx5/?context=8&depth=9
+user_pref("network.trr.mode",					2);
+user_pref("network.trr.url",					"https://mozilla.cloudflare-dns.com/dns-query");
+user_pref("network.security.ensi.enabled",			true);
+
 /*******************************************************************************
  * SECTION: Caching                                                            *
  ******************************************************************************/
@@ -1145,11 +1152,3 @@ user_pref("security.ssl3.dhe_dss_camellia_256_sha",		false);
 // PREF: Fallbacks due compatibility reasons
 user_pref("security.ssl3.rsa_aes_256_sha",			true); // 0x35
 user_pref("security.ssl3.rsa_aes_128_sha",			true); // 0x2f
-
-// PREF: DNS over HTTPS
-// https://www.reddit.com/r/firefox/comments/a5evhr/configure_dns_over_https_in_firefox/
-// https://www.reddit.com/r/firefox/comments/a5evhr/configure_dns_over_https_in_firefox/ebndrx5/?context=8&depth=9
-user_pref("network.trr.mode",					2);
-user_pref("network.trr.url",					"https://mozilla.cloudflare-dns.com/dns-query");
-user_pref("network.security.ensi.enabled",			true);
-
