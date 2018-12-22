@@ -724,7 +724,7 @@ user_pref("privacy.firstparty.isolate",				true);
 user_pref("network.cookie.thirdparty.sessionOnly",		true);
 
 // PREF: Spoof User-agent
-user_pref("general.useragent.override",				"Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0");
+user_pref("general.useragent.override",				"Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0");
 user_pref("general.appname.override",				"Netscape");
 user_pref("general.appversion.override",			"5.0 (Windows)");
 user_pref("general.platform.override",				"Win32");
